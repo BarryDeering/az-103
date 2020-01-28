@@ -7,8 +7,21 @@
       "type": "string",
       "minLength": 3,
       "maxLength": 24
+      },
+      "StorageSKU": {
+      "type" :"string",
+      "defaultValue": "Standard_LRS",
+      "allowedValues": [
+        "Standard_LRS",
+        "Standard_GRS",
+        "Standard_RAGRS",
+        "Standard_ZRS",
+        "Premium_LRS",
+        "Premium_ZRS",
+        "Standard_GZRS",
+        "Standard_RAGZRS"
+        ]
       }
-
     },
 
     "resources": [
@@ -18,7 +31,7 @@
       "name": "[parameters('storagename')]",
       "location": "UK South",
       "sku": {
-        "name": "Standard_LRS"
+        "name": "[parameters('StorageSKU')]"
       },
       "kind": "StorageV2",
       "properties": {

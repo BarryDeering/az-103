@@ -1,4 +1,4 @@
-$templateFile = "C:\Az103\ARM\Tutorial\azuredeploy.json"
+$templateFile = "C:\BWDGit\az-103\ARM\Tutorial\azuredeploy.json"
 New-AzResourceGroupDeployment `
   -Name storageaccount `
   -ResourceGroupName rg-bwdlab-az103 `
