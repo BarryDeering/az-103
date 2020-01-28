@@ -1,0 +1,8 @@
+
+
+To deploy to a resource group, use New-AzResourceGroupDeployment:
+
+Azure PowerShell
+
+Copy
+New-AzResourceGroupDeployment -ResourceGroupName <resource-group-name> -TemplateFile <path-to-template>
