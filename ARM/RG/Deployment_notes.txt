@@ -1,0 +1,4 @@
+To deploy to a subscription, use New-AzDeployment:
+
+New-AzDeployment -Location <location> -TemplateFile <path-to-template>
+
