@@ -1,0 +1,19 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+      "storagePrefix": {
+        "value": "devstore"
+      },
+      "storageSKU": {
+        "value": "Standard_LRS"
+      },
+      "ASP_name": {
+        "value": "sp-bwdlab-AppServicePlan-dev"
+      },
+      "webAppName": {
+        "value": "devappwa-bwdlab-LinuxApp-dev"
+      }
+
+    }
+   }
