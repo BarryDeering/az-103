@@ -1,0 +1,20 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+      "adminUsername": {
+        "value": "bwdlocaladmin"
+      },
+      "adminPassword": {
+        "reference": {
+          "keyVault": {
+          "id": "/subscriptions/08fd3d0c-eedb-4ad1-8c3e-02c2e7b70a14/resourceGroups/rg-bwdlab-keyvault/providers/Microsoft.KeyVault/vaults/kv-bwdlab"
+          },
+          "secretName": "localadmin"
+        }
+      },
+      "dnsLabelPrefix": {
+        "value": "bwdlab"
+      }
+    }
+  }
