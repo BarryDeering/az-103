@@ -14,7 +14,7 @@
         }
       },
       "dnsLabelPrefix": {
-        "value": "bwdlab"
+        "value": "bwdlabsimplevm"
       }
     }
   }
