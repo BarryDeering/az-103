@@ -1,0 +1,16 @@
+[
+    {
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/e56962a6-4747-49cd-b67b-bf8b01975c4c",
+     "parameters": {
+    "AllowedLocations": {
+        "type": "array",
+        "metadata": {
+            "description": "The list of allowed locations for resources.",
+            "displayName": "Allowed locations",
+            "strongType": "location"
+        }
+    }
+}
+    }
+
+]
